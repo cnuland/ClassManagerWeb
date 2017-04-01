@@ -1,0 +1,63 @@
+{
+  {
+    "id":1,
+    "name":"Intro to Computer Science",
+    "title": "CS101",
+    "time": "0000-00-00 09:30:00",
+    "days": "MWF",
+    "semester": "SPRING",
+    "year":2017,
+    "isCurrent": true,
+    "facultyId": 1,
+    "students":{
+       {
+        "id": 1,
+        "status": "ENROLLED"
+      },{
+        "id": 3,
+        "status": "ENROLLED"
+      },{
+        "id": 4,
+        "status": "DROPPED"
+      },{
+        "id": 6,
+        "status": "ENROLLED"
+      }
+    }
+  },{
+    "id":2,
+    "name":"Algorithms",
+    "title": "CS344",
+    "time": "0000-00-00 17:00:00",
+    "days": "TTHR",
+    "semester": "FALL",
+    "year":2016,
+    "isCurrent": false,
+    "facultyId": 1,
+    "students":{
+       {
+        "id": 1,
+        "status": "ENROLLED"
+      },{
+        "id": 5,
+        "status": "ENROLLED"
+      }
+   }
+  },{
+    "id":3,
+    "name":"Graduate Seminar in Databases",
+    "title": "CS540",
+    "time": "0000-00-00 11:00:00",
+    "days": "MWF",
+    "semester": "SPRING",
+    "year":2017,
+    "isCurrent": true,
+    "facultyId": 1,
+    "students":{
+       {
+        "id": 2,
+        "status": "ENROLLED"
+      }
+   }
+  }
+}
