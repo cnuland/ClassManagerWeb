@@ -1,5 +1,3 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 <div class="students-container">
   <div id="mySidenav" class="sidenav">
     <ul>
@@ -21,20 +19,15 @@
       <h1> {{_selectedCourse.name}} Students </h1>
     </div>
 
-    <button md-biutton [mdMenuTriggerFor]="menu" id="add-student">Add Student</button>
-    <md-menu #menu="mdMenu">
-      <button md-menu-item>
-        <md-icon>fingerprint</md-icon>
-        <span>Login</span>
-      </button>
-      <button md-menu-item disabled>
-        <md-icon>announcement</md-icon>
-        <span>Issues</span>
-      </button>
-      <button md-menu-item>
-        <md-icon>notifications_off</md-icon>
-        <span>Disable alerts</span>
-      </button>
+
+<!-- menu opens when trigger button is clicked -->
+    <button md-button [md-menu-trigger-for]="menu">Add Student</button>
+ 
+    <md-menu md-position-mode="target-right target" md-offset="0 42" #menu="mdMenu">
+     <button md-menu-item> Refresh </button>
+     <button md-menu-item> Settings </button>
+     <button md-menu-item> Help </button>
+      <button md-menu-item> Sign Out </button>
     </md-menu>
 
     <md-grid-list cols="3" rowHeight="300px" gutterSize="15px">

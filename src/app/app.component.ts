@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContextMenuComponent } from 'angular2-contextmenu/src/contextMenu.component';
 
 @Component({
   selector: 'app-root',

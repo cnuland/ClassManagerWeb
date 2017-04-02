@@ -8,7 +8,7 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { StudentsComponent } from './components/students/students.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
-  
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
 import {routing} from './app.routing'
 @NgModule({
   declarations: [
@@ -24,6 +24,7 @@ import {routing} from './app.routing'
     FormsModule,
     HttpModule,
     MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
