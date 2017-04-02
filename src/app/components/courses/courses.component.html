@@ -24,10 +24,9 @@
     <button md-button [md-menu-trigger-for]="menu">Add Student</button>
  
     <md-menu md-position-mode="target-right target" md-offset="0 42" #menu="mdMenu">
-     <button md-menu-item> Refresh </button>
-     <button md-menu-item> Settings </button>
-     <button md-menu-item> Help </button>
-      <button md-menu-item> Sign Out </button>
+      <div *ngFor="let student of _allStudents">
+        <button md-menu-item> {{student.firstName}} {{student.lastName}} </button>
+      </div>
     </md-menu>
 
     <md-grid-list cols="3" rowHeight="300px" gutterSize="15px">
