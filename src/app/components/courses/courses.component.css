@@ -1,0 +1,100 @@
+
+.students-container {
+  width: 1000px;
+  height: 700px;
+}
+
+.students {
+  float:left;
+  width: 700px;
+
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 700px; /* 100% Full-height */
+    width: 250px; /* 0 width - change this with JavaScript */
+    background-color: white; /* Black*/
+    overflow: scroll;
+    border-right: 1px solid;
+    padding-right: 25px;
+    float:left;
+ }
+
+/* The navigation menu links */
+.sidenav li {
+    padding: 8px 8px 8px 5px;
+    text-decoration: none;
+    color: #0a0a0f;
+    display: block;
+    width:175px;
+    margin-bottom: 10px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav li:hover, .offcanvas li:focus{
+    color: #f1f1f1;
+}
+
+div#header {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  text-weight: bold; 
+  overflow: hidden; 
+  white-space: nowrap;
+  padding-bottom: 3px;
+  color:white;
+}
+
+div#title {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 3px;
+  color:white;
+}
+
+div#time {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 3px;
+  color:white;
+}
+
+div#semester {
+  font-size: 12px;
+  padding-bottom: 3px;
+  color:white;
+}
+
+div#size {
+  font-size: 12px;
+  color:white;
+}
+
+md-card {
+  background-color: #333;
+}
+
+.student {
+  width:120px;
+  height:200px;i
+  margin: auto;
+  background-color: #333;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+#delete-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  background-color: white;
+}

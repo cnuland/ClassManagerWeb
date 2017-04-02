@@ -1,0 +1,33 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<div class="students-container">
+  <div id="mySidenav" class="sidenav">
+    <ul>
+      <h1> Courses </h1>
+      <li *ngFor="let course of _courses" (click)="selectCourse(course)">
+        <md-card>
+          <div id="header"> {{course.name}} </div>
+          <div id="title"> {{course.title}} </div>
+          <div id="time"> Time: {{course.days}} {{course.time}} </div>
+          <div id="semester"> Semester: {{course.semester}} </div>
+          <div id="size"> Class Size:{{course.students.length}} </div>
+        </md-card>
+      </li>
+    </ul>
+  </div>
+
+  <div class="students"> 
+    <md-grid-list cols="3" rowHeight="300px" gutterSize="15px">
+      <md-grid-tile *ngFor="let student of _students">
+        <md-card class="student">   
+            <img width="100px" height="100px" src="placeholder.png">
+            <div id="header"> {{student.firstName}} {{student.lastName}}</div>
+            <div id="title"> {{student.email}} </div>
+            <div id="title"> Status: {{student.classStatus}} </div>
+            <button md-button id="delete-button">Remove</button>
+        </md-card>
+    </md-grid-tile>
+    </md-grid-list>
+  </div>
+
+</div>

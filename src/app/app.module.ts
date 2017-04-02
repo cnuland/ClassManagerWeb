@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { ClassesComponent } from './components/classes/classes.component';
+import { CoursesComponent } from './components/courses/courses.component';
 import { StudentsComponent } from './components/students/students.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
@@ -13,7 +14,7 @@ import {routing} from './app.routing'
 @NgModule({
   declarations: [
     AppComponent,
-    ClassesComponent,
+    CoursesComponent,
     StudentsComponent,
     ProfileComponent,
     HomeComponent
@@ -22,7 +23,8 @@ import {routing} from './app.routing'
     routing,
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
