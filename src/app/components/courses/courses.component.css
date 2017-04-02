@@ -81,7 +81,7 @@ md-card {
 
 .student {
   width:120px;
-  height:200px;i
+  height:200px;
   margin: auto;
   background-color: #333;
   text-align: center;
@@ -106,3 +106,12 @@ h1 {
   color: white;
   background-color: #333;
 }
+
+#menu-button {
+   border-bottom-width:1px;
+   border-bottom-color: black;
+   border-bottom-style: solid;
+}
+
+
+
