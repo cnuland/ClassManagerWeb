@@ -4,7 +4,8 @@ import { CoursesComponent } from './courses.component';
 
 describe('CoursesComponent', () => {
   let component: CoursesComponent;
-  let fixture: CoursesFixture<CoursesComponent>;
+  :x
+  :x
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({

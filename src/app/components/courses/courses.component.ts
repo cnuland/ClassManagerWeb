@@ -10,8 +10,9 @@ import {Student} from "../../models/student"
   providers: [CoursesService]
 })
 export class CoursesComponent implements OnInit {
-  _courses = []
-  _students = []
+   _courses = []
+   _students = []
+   _selectedCourse
   constructor(private _coursesService: CoursesService, private cdRef: ChangeDetectorRef) {
     _coursesService.getCourses().subscribe(
       courses => {
@@ -23,11 +24,10 @@ export class CoursesComponent implements OnInit {
   }
 
   selectCourse(course) {
-    console.log("Selected a Course:",course)  
     if(course.students){
       this._students = course.students
       this.cdRef.detectChanges()
-      console.log("set students",this._students)
+      this._selectedCourse = course;
     }
   }
 }

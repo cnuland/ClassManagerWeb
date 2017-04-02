@@ -3,7 +3,7 @@
 <div class="students-container">
   <div id="mySidenav" class="sidenav">
     <ul>
-      <h1> Courses </h1>
+      <h1>My Courses</h1>
       <li *ngFor="let course of _courses" (click)="selectCourse(course)">
         <md-card>
           <div id="header"> {{course.name}} </div>
@@ -16,7 +16,27 @@
     </ul>
   </div>
 
-  <div class="students"> 
+  <div class="students">
+    <div *ngIf="_selectedCourse">
+      <h1> {{_selectedCourse.name}} Students </h1>
+    </div>
+
+    <button md-biutton [mdMenuTriggerFor]="menu" id="add-student">Add Student</button>
+    <md-menu #menu="mdMenu">
+      <button md-menu-item>
+        <md-icon>fingerprint</md-icon>
+        <span>Login</span>
+      </button>
+      <button md-menu-item disabled>
+        <md-icon>announcement</md-icon>
+        <span>Issues</span>
+      </button>
+      <button md-menu-item>
+        <md-icon>notifications_off</md-icon>
+        <span>Disable alerts</span>
+      </button>
+    </md-menu>
+
     <md-grid-list cols="3" rowHeight="300px" gutterSize="15px">
       <md-grid-tile *ngFor="let student of _students">
         <md-card class="student">   
