@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { CoursesComponent, RemoveStudentDialog } from './components/courses/courses.component';
-import { StudentsComponent } from './components/students/students.component';
+import { StudentsComponent, DeleteStudentDialog } from './components/students/students.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
-import {routing} from './app.routing'
+import {routing} from './app.routing';
+import { NewStudentComponent } from './components/new-student/new-student.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import {routing} from './app.routing'
     StudentsComponent,
     ProfileComponent,
     HomeComponent,
-    RemoveStudentDialog
+    RemoveStudentDialog,
+    DeleteStudentDialog,
+    NewStudentComponent
   ],
   imports: [
     routing,
@@ -29,6 +33,6 @@ import {routing} from './app.routing'
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [RemoveStudentDialog]
+  entryComponents: [DeleteStudentDialog, RemoveStudentDialog]
 })
 export class AppModule { }

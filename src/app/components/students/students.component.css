@@ -1,0 +1,65 @@
+#student-container {
+  width:1000px;
+  height:700px;
+}
+
+.students {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+md-card {
+  background-color: #333;
+}
+
+.student {
+  width:120px;
+  height:200px;
+  margin: auto;
+  background-color: #333;
+  text-align: center;
+  margin-top: 55px;
+}
+
+h1 {
+  text-align: center;
+}
+
+div#header {
+  font-size: 16px;
+  text-overflow: ellipsis;
+  text-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 3px;
+  color:white;
+}
+
+div#title {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-bottom: 3px;
+  color:white;
+}
+#delete-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  background-color: white;
+}
+
+#add-button {
+  background-color: #333;
+  color: white;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float:right;
+}
+
+
+

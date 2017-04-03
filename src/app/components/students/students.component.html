@@ -1,3 +1,18 @@
-<p>
-  students works!
-</p>
+<div class="students-container">
+<button md-button id="add-button" (click)="addStudent()">New Student</button>    
+  <div class="students">
+<!-- menu opens when trigger button is clicked -->
+<md-grid-list cols="4" rowHeight="300px" gutterSize="15px">
+      <md-grid-tile *ngFor="let student of _students">
+        <md-card class="student">   
+            <img width="100px" height="100px" src="placeholder.png">
+            <div id="header"> {{student.firstName}} {{student.lastName}}</div>
+            <div id="title"> {{student.email}} </div>
+            <div id="title"> GPA: {{student.gpa}} </div>
+            <button md-button id="delete-button"
+              (click)="removeStudent(student)">Delete</button>
+        </md-card>
+    </md-grid-tile>
+    </md-grid-list>
+  </div>
+</div>

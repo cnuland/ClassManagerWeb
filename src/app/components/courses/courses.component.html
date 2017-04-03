@@ -19,7 +19,7 @@
       <h1> {{_selectedCourse.name}} Students </h1>
 
 <!-- menu opens when trigger button is clicked -->
-    <button md-button [md-menu-trigger-for]="menu" id="add-button">Add Student</button>
+    <button md-button [md-menu-trigger-for]="menu" id="add-button">Enroll Student</button>
     <md-menu md-position-mode="target-right target" md-offset="0 42"
       #menu="mdMenu">
         <button id="menu-button" md-menu-item *ngFor="let student of _allStudents"
