@@ -1,3 +1,30 @@
-<p>
-  new-student works!
-</p>
+<div id="newStudent-container">
+  <md-card id="input-container">
+    <table class="example-full-width" cellspacing="0"><tr>
+    <td><h2>First Name: </h2></td>
+    <td><md-input-container class="example-full-width">
+      <input mdInput [(ngModel)]="_firstName">
+    </md-input-container></td>
+  </tr>
+    <tr>
+    <td><h2>Last Name: </h2></td>
+      <td><md-input-container class="example-full-width">
+         <input mdInput [(ngModel)]="_lastName">
+      </md-input-container></td>
+      </tr>
+    <tr>
+    <td><h2>Email: </h2></td>
+      <td><md-input-container class="example-full-width">
+         <input mdInput [(ngModel)]="_email">
+      </md-input-container></td>
+      </tr>
+    <tr>
+    <td><h2>Phone Number: </h2></td>
+      <td><md-input-container class="example-full-width">
+         <input mdInput [(ngModel)]="_phone">
+      </md-input-container></td>
+      </tr>
+    </table>
+    <button md-button id="add-button" (click)="saveStudent()">Save</button>
+  </md-card>
+</div>

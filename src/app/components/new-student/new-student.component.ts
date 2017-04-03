@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-student.component.css']
 })
 export class NewStudentComponent implements OnInit {
-
+  _firstName = ""
+  _lastName = ""
+  _phone = ""
+  _email = ""
   constructor() { }
+
+  saveStudent(){
+    console.log("Saved a student! "+this._firstName+" "+this._lastName)
+  }
 
   ngOnInit() {
   }
